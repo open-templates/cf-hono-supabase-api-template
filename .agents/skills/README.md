@@ -24,7 +24,18 @@ Canonical spec: [`specs/FEATURES.md`](../../specs/FEATURES.md)
 | [authentication](authentication/SKILL.md) | JWT middleware, Supabase client selection, `/me` patterns |
 | [supabase-mcp](supabase-mcp/SKILL.md) | Migrations, seeding, schema inspection via Supabase MCP |
 
-Bundled Supabase upstream skills (if present in a fork): use for general Supabase CLI/MCP guidance.
+### Upstream Supabase skills (optional install)
+
+[`skills-lock.json`](../../skills-lock.json) pins the same `supabase/agent-skills` versions as the React template (not tied to any user or MCP `project_ref`).
+
+After clone, install into this repo if you want the full Supabase skill packs locally:
+
+```bash
+npx skills add supabase/agent-skills --skill supabase
+npx skills add supabase/agent-skills --skill supabase-postgres-best-practices
+```
+
+Or configure Supabase MCP in Cursor (see `INSTRUCTIONS.md`) — project-specific; separate from `computedHash`.
 
 ## Project layout
 

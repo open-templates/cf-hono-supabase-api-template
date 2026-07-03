@@ -90,6 +90,16 @@ Read in order:
 1. **`INSTRUCTIONS.md`** (this file) — prerequisites and pairing
 2. **`specs/FEATURES.md`** — current API contract
 3. **`.agents/skills/README.md`** — skill index
+4. **`skills-lock.json`** — pinned upstream Supabase skills (optional `npx skills add` to install)
+
+### Supabase MCP vs skills-lock
+
+| | **Cursor MCP** (`~/.cursor/mcp.json`) | **`skills-lock.json`** |
+|---|---|---|
+| Purpose | Connect agent to *your* Supabase project at runtime | Pin *public* skill packs from `supabase/agent-skills` |
+| Personal? | Yes — `project_ref` is per developer/project | No — same hashes for everyone on the same skill version |
+
+Configure MCP separately after clone; it is not stored in this repository.
 
 ### Adding a new endpoint
 
@@ -117,7 +127,8 @@ src/routes/           health.ts, me.ts (+ your routes)
 src/middleware/       Auth, CORS, errors
 src/lib/supabase.ts   Client factories
 specs/FEATURES.md     Feature specification
-.agents/skills/       Agent skills
+skills-lock.json        Pinned upstream Supabase agent skills
+.agents/skills/         Project agent skills
 .cursor/rules/        Cursor IDE rules
 ```
 
