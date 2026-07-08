@@ -1,25 +1,6 @@
-# cf-hono-supabase-api-template
+# repo-name
 
-Minimal Cloudflare Worker API built with **Hono** and **Supabase** from [@open-templates](https://github.com/open-templates). Pairs with [react-supabase-auth-template](https://github.com/open-templates/react-supabase-auth-template).
-
-## Quick start
-
-1. **Use this template** on GitHub, then clone your repo.
-2. Personalize from `templates/`:
-
-```bash
-./scripts/init-from-template.sh
-```
-
-3. Install and run:
-
-```bash
-npm install
-cp .env.example .dev.vars
-npm run dev
-```
-
-See [`templates/ABOUT_TEMPLATES.md`](templates/ABOUT_TEMPLATES.md) and [`docs/INIT_TEMPLATE.md`](docs/INIT_TEMPLATE.md).
+Minimal Cloudflare Worker API built with **Hono** and **Supabase**. Pairs with [paired-repo-name](https://github.com/owner-username/paired-repo-name): the React app handles auth; this worker validates JWTs and exposes API endpoints.
 
 ## Out-of-the-box features
 
@@ -56,7 +37,7 @@ Full setup: [`QUICKSTART.md`](QUICKSTART.md) · Cloudflare deploy: [`CLOUDFLARE_
 | `ALLOWED_ORIGINS` | No | Comma-separated CORS origins |
 | `ENVIRONMENT` | No | `development` / `staging` / `production` |
 
-Maintained by [xarlizard](https://github.com/jane).
+Maintained by [author-display-name](https://github.com/author-github-login).
 
 ## License
 

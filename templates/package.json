@@ -1,20 +1,24 @@
 {
-  "name": "cf-hono-supabase-api-template",
+  "name": "repo-name",
   "version": "0.1.0",
   "private": true,
+  "description": "Minimal Cloudflare Worker API with Hono and Supabase Auth.",
   "type": "module",
-  "description": "Minimal Cloudflare Worker API with Hono and Supabase Auth. Pairs with react-supabase-auth-template.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/open-templates/cf-hono-supabase-api-template.git"
+    "url": "git+https://github.com/owner-username/repo-name.git"
   },
-  "homepage": "https://github.com/open-templates/cf-hono-supabase-api-template#readme",
+  "homepage": "https://github.com/owner-username/repo-name#readme",
   "bugs": {
-    "url": "https://github.com/open-templates/cf-hono-supabase-api-template/issues"
+    "url": "https://github.com/owner-username/repo-name/issues"
+  },
+  "author": {
+    "name": "author-display-name",
+    "email": "author-id+author-github-login@users.noreply.github.com",
+    "url": "https://github.com/author-github-login"
   },
   "license": "MIT",
   "scripts": {
-    "init": "node scripts/init-from-template.mjs",
     "build": "tsc",
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
