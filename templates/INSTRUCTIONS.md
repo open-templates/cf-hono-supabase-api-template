@@ -9,7 +9,7 @@ Minimal **Hono + Supabase** Cloudflare Worker API. Pairs with [paired-repo-name]
 | `GET /health` | Public | Liveness probe |
 | `GET /me` | Bearer JWT | Authenticated user profile |
 
-Details: [`specs/FEATURES.md`](specs/FEATURES.md)
+Details: [`index.md`](index.md)
 
 ## Local development
 

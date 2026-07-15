@@ -9,7 +9,7 @@ Minimal Cloudflare Worker API built with **Hono** and **Supabase**. Pairs with [
 | `GET /health` | Public | Liveness check for frontend online/offline indicator |
 | `GET /me` | Bearer JWT | Returns the authenticated Supabase user profile |
 
-See [`specs/FEATURES.md`](specs/FEATURES.md) for detailed behavior and extension guidance.
+See [`index.md`](index.md) for detailed behavior and extension guidance.
 
 ## Quick start
 

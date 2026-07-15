@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **CORS** — configurable via `ALLOWED_ORIGINS` for local dev and production frontends.
 - **Supabase client helpers** — JWT-scoped, anonymous, and service-role clients in `src/lib/supabase.ts`.
 - **Request logging** and centralized error handling middleware.
-- **Feature specification** at [`specs/FEATURES.md`](specs/FEATURES.md) for endpoint contracts and extension guidance.
+- **Feature specification** at [`index.md`](index.md) for endpoint contracts and extension guidance.
 - **Pairing** with [react-supabase-auth-template](https://github.com/open-templates/react-supabase-auth-template) for end-to-end auth demo.
 - **Template init wizard** — `./scripts/init-from-template.sh` personalizes repo metadata, `wrangler.toml`, and `package.json` from `templates/`.
 - **Shared repository scaffolding** — Dependabot, CODEOWNERS, issue templates, PR template, and standard markdown docs via `@open-templates/specs`.

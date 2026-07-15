@@ -13,9 +13,9 @@ Minimal **Hono + Supabase** worker paired with **react-supabase-auth-template**:
 
 No custom Postgres tables required for the default template.
 
-Canonical spec: [`specs/FEATURES.md`](../../specs/FEATURES.md)
+Canonical OKF specs: [`index.md`](../../index.md) · OKF modules: [`.agents/skills/index.md`](index.md)
 
-## Skills
+## Cursor SKILL.md packs
 
 | Skill | Use when |
 |-------|----------|
@@ -26,16 +26,23 @@ Canonical spec: [`specs/FEATURES.md`](../../specs/FEATURES.md)
 
 ### Upstream Supabase skills (optional install)
 
-[`skills-lock.json`](../../skills-lock.json) pins the same `supabase/agent-skills` versions as the React template (not tied to any user or MCP `project_ref`).
-
-After clone, install into this repo if you want the full Supabase skill packs locally:
+[`skills-lock.json`](../../skills-lock.json) pins `supabase/agent-skills` versions (not tied to any MCP `project_ref`).
 
 ```bash
 npx skills add supabase/agent-skills --skill supabase
 npx skills add supabase/agent-skills --skill supabase-postgres-best-practices
 ```
 
-Or configure Supabase MCP in Cursor (see `INSTRUCTIONS.md`) — project-specific; separate from `computedHash`.
+Or configure Supabase MCP in Cursor (see `INSTRUCTIONS.md`).
+
+## OKF modules (local)
+
+| Module | Use when |
+|--------|----------|
+| [auth-middleware](modules/auth-middleware.md) | Hono JWT gate and client selection |
+| [response-helpers](modules/response-helpers.md) | standardized JSON success/error responses |
+
+Shared concepts (synced): [shared/auth/](shared/auth/) · [shared/supabase/](shared/supabase/)
 
 ## Project layout
 
@@ -57,7 +64,7 @@ src/
 2. **Route** → `src/routes/<name>.ts`
 3. **Register** in `src/index.ts` (public before auth, or after `authMiddleware`)
 4. **Migration** (if new tables) → Supabase MCP / CLI; enable RLS
-5. **Document** → `specs/FEATURES.md` + frontend `src/api/` module
+5. **Document** → `specs/features/` + `.agents/skills/modules/` + frontend `src/api/` module
 
 ## Middleware order (do not break)
 
