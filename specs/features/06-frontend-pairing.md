@@ -25,3 +25,12 @@ Base URL in frontends: `VITE_API_BASE_URL` (default `http://localhost:8787`).
 | [astro-supabase-auth-template](https://github.com/open-templates/astro-supabase-auth-template) | Astro |
 
 Start from any frontend `index.md` and `INSTRUCTIONS.md` for env and CORS notes.
+
+## Alternative backends (same contract)
+
+| Backend | Runtime | Default local URL |
+|---------|---------|-------------------|
+| `cf-hono-supabase-api-template` | Cloudflare Worker | `http://localhost:8787` |
+| `cf-fastapi-supabase-api-template` | Cloudflare Python | `http://localhost:8787` |
+| `cf-rust-supabase-api-template` | Cloudflare Rust | `http://localhost:8787` |
+| [vm-php-supabase-api-template](https://github.com/open-templates/vm-php-supabase-api-template) | Docker / VM | `http://localhost:8080` |
